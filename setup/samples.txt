@@ -1,0 +1,5 @@
+curl -X POST -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "Content-Type: application/json" -d @payload.json http://localhost:9763/client-registration/v0.10/register
+
+python export-api.py <key> <skrt> admin admin localhost 8243 9443 /Users/nuwanbando/repos/WSO2-AM-API-Import-Export-Tool/api-repo
+
+python import-api.py <key> <skrt> admin admin localhost 8243 9443 /Users/nuwanbando/repos/WSO2-AM-API-Import-Export-Tool/api-repo

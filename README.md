@@ -12,7 +12,7 @@ To create a OAuth application Carbon user or Carbon tenant user credentials have
 
 OAuth Application Creation Request.
 ```
-curl -X POST -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "Content-Type: application/json" -d @payload.json http://localhost:9763/client-registration/v0.9/register
+curl -X POST -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "Content-Type: application/json" -d @payload.json http://localhost:9763/client-registration/v0.10/register
 ```
 
 payload.json
