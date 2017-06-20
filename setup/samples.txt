@@ -1,5 +1,13 @@
-curl -X POST -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "Content-Type: application/json" -d @payload.json http://localhost:9763/client-registration/v0.10/register
+curl -X POST -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "Content-Type: application/json" -d @payload.json http://localhost:9763/client-registration/v0.11/register
 
-python export-api.py <key> <skrt> admin admin localhost 8243 9443 /Users/nuwanbando/repos/WSO2-AM-API-Import-Export-Tool/api-repo
+before executing
 
-python import-api.py <key> <skrt> admin admin localhost 8243 9443 /Users/nuwanbando/repos/WSO2-AM-API-Import-Export-Tool/api-repo
+Navigate to repository/conf/security/Owasp.CsrfGuard.Carbon.properties and mark - org.owasp.csrfguard.Enabled = false
+
+navigate to "WSO2-AM-API-Import-Export-Tool" dir
+
+and execute ...
+
+python export-api.py <key> <skrt> admin admin localhost 8243 9443 <PATH_TO>/WSO2-AM-API-Import-Export-Tool/api-repo
+
+python import-api.py <key> <skrt> admin admin localhost 8243 9443 <PATH_TO>/WSO2-AM-API-Import-Export-Tool/api-repo

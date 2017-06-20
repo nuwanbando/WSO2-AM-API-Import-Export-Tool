@@ -179,15 +179,15 @@ def zipAllFiles(gitRepoPath):
 
 def getImpExpEndpoint(hostName, port):
     #Preserve provider set to false to support new environments
-    endPoint = 'https://' + hostName + ':' + port + '/api-import-export-2.0.0-v0/import-api?preserveProvider=false'
+    endPoint = 'https://' + hostName + ':' + port + '/api-import-export-2.1.0-v2/import-api?preserveProvider=false'
     return endPoint
 
 def getRestApiEndpoint(hostName, restApiEnpointPort):
-    endPoint = 'https://' + hostName + ':' + restApiEnpointPort + '/api/am/publisher/v0.10'
+    endPoint = 'https://' + hostName + ':' + restApiEnpointPort + '/api/am/publisher/v0.11'
     return endPoint
 
 def getRestStoreApiEndpoint(hostName, restApiEnpointPort):
-    endPoint = 'https://' + hostName + ':' + restApiEnpointPort + '/api/am/store/v0.10'
+    endPoint = 'https://' + hostName + ':' + restApiEnpointPort + '/api/am/store/v0.11'
     return endPoint
 
 def getTokenEndpoint(hostName, tokenEnpointPort):
